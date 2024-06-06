@@ -5,7 +5,15 @@
 Creating a cat theme web app that allows users to track their habits on a daily basis. Where they get a visual representation on how much they have accomplished over the course of a day, week, month, and year. While also having cat themed badges as an incentive to keep going and being consistent in their journey.
 
 # Tools
+### Frontend
+- React
+    - TypeScript
+- Styling
+    - Tailwind CSS
 
+### Backend
+- Supabase
+    - Using Supabase as our backend since they provide tools like authentication and a database
 
 # Creating the Web App
 ### Content
