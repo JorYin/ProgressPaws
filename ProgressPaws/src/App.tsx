@@ -1,34 +1,34 @@
-import { useEffect, useState } from "react";
+import * as React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import SupabaseTest from "./pages/SupaTest";
+import LandingPage from "./pages/Landing"
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
-import { createClient } from "@supabase/supabase-js";
-import type {Database} from "./database.types";
-
-export const supabase = createClient<Database>(import.meta.env.VITE_API_SUPABASE_URL, import.meta.env.VITE_API_SUPABASE_KEY);
-
-type Country = Database['public']['Tables']['countries']['Row'];
+const router = createBrowserRouter([
+  {
+    path: "/supbaseTest",
+    element: <SupabaseTest />,
+  },
+  {
+    path: "/",
+    element: <LandingPage />,
+  },
+  {
+    path: "/register",
+    element: <Register />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+]);
 
 function App() {
-  const [countries, setCountries] = useState<Country[]>([]);
-
-  useEffect(() => {
-    getCountries();
-  }, []);
-
-  async function getCountries() {
-    const { data } = await supabase.from("countries").select();
-    setCountries(data || []);
-  }
 
   return (
     <div>
-        <h1 className="text-3xl font-bold underline">
-          Countries in the database!
-        </h1>
-      <ul>
-        {countries.map((country) => (
-          <li key={country.name}>{country.name}</li>
-        ))}
-      </ul>
+      <RouterProvider router={router} />
     </div>
   );
 }
