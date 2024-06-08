@@ -1,0 +1,125 @@
+.quote {
+    text-align: center;
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 3rem;
+    position: relative;
+    top: 100px;
+    
+}
+
+.login {
+    font-family:Tahoma;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    left: 1300px;
+    
+
+
+}
+
+.button_log {
+  position: relative;
+    left: -10px;
+    color: white;
+    display: block;
+    margin: 1em auto;
+    font-family: Tahoma;
+    color: #5d5d5d;
+    display: block;
+    margin: 1em auto;
+    font-size: 1rem;
+    min-width: 10px;
+    height: 35px;
+    border-radius: 25px;
+}
+
+.button_sign {
+  color: white;
+    display: block;
+    border-color: #DB6264;
+    margin: 1em auto;
+    font-family: Tahoma;
+    color: white;
+    display: block;
+    border-color: #DB6264;
+    margin: 1em auto;
+    font-size: 1rem;
+    background-color: #DB6264;
+    min-width: 10px;
+    height: 35px;
+    border-radius: 25px;
+}
+
+.solid {
+  position: relative;
+}
+
+body {
+    font-family: Tahoma;
+}
+
+.button_cat {
+  display: flex;
+  align-items: center;
+  position: center;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 1.2rem;
+    position: relative;
+
+  }
+  
+
+.center-text { 
+    text-align: left;
+    padding-right: 1em;
+    position: relative;
+    top: 44px;
+    left: -10px;
+}
+
+.top {
+    max-width: 45%;
+    max-height:45%;
+    float: center;
+    position: relative;
+    top: 80px;
+    left: 30px;
+
+  }
+
+.bottom {
+    max-width: 60%;
+    max-height:40%;
+    float: right;
+    position: relative;
+    left: 850px;
+
+}
+
+
+.button {
+  position: relative;
+  top: 80px;
+  left: 570px;
+    font-family: Tahoma;
+    color: white;
+    display: block;
+    border-color: #DB6264;
+    margin: 1em auto;
+    height: 60px;
+    font-size: 1.3rem;
+    background-color: #DB6264;
+    min-width: 200px;
+    border-radius: 25px;
+    width: 100px;
+  }
