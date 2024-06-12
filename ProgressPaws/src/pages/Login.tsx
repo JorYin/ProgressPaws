@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import ProgressPawsHeader from "../components/core/ProgressPawHeader"
 
-function Login() {
+const Login: React.FC = () => {
   return (
     <div>
+      <ProgressPawsHeader />
     </div>
   );
-}
+};
 
 export default Login;

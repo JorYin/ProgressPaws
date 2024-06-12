@@ -1,14 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import LinkRoute from "../components/core/LinkRoute";
+import ProgressPaws from "../components/core/ProgressPawHeader"
 
-function LandingPage() {
+const LandingPage: React.FC = () => {
   return (
     <div>
+      <ProgressPaws />
       <div className="flex justify-center items-center h-screen">
-          <Link className="text-white text-lg p-4 rounded-lg bg-rose-500 hover:bg-rose-600 cursor-pointer" to="/supbaseTest">Go to Supabase Test</Link> 
+        <LinkRoute style="text-white text-lg p-4 rounded-lg bg-rose-500 hover:bg-rose-600 cursor-pointer" toRoute="/login" text="Get Started!" />
       </div>
     </div>
   );
-}
+};
 
 export default LandingPage;
