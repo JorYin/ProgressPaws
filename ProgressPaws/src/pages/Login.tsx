@@ -9,11 +9,11 @@ const Login: React.FC = () => {
         <ProgressPawsHeader />
 
       <div className="flex justify-center items-center" style={{height: "75vh"}}>
-        <div className="w-full max-w-xl m-auto ">
+        <div className="w-full max-w-md m-auto ">
           <form className="bg-slate-100 shadow-md rounded px-8 pt-6 pb-8 mx-5">
             <div className="flex flex-col">
               <div className="text-center items-center mb-6">
-                <h1 className="text-3xl tracking-tight">Welcome Back!</h1>
+                <h1 className="text-3xl tracking-tight font-semibold">Welcome back!</h1>
               </div>
               <div>
                 <div className="flex flex-col">
@@ -31,8 +31,8 @@ const Login: React.FC = () => {
                 </div>
               </div>
               <div className="text-center">
-                <button className="w-full p-2 bg-slate-200 my-5 rounded transition ease-in-out delay-75 hover:bg-slate-300">
-                  <LinkRoute text="Login" style="w-full" toRoute="/dashboard"/>
+                <button className="w-full font-semibold p-2 bg-slate-200 my-5 rounded transition ease-in delay-100 hover:bg-slate-300">
+                  LOGIN
                 </button>
               </div>
               <div>
