@@ -22,7 +22,7 @@ const Login: React.FC = () => {
                   </label>
                   <input type="text" placeholder="Email address" className="my-1 p-1 bg-slate-200 border-solid border-2 border-slate-300 rounded"></input>
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col mt-2">
                   <label className="font-extrabold tracking-tighter">
                     Password
                   </label>
